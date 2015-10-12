@@ -17,6 +17,9 @@ game.printGame();
 //flop (3 cards)
 game.communityCard().communityCard().communityCard();
 
+//Jim folds
+game.removeHand("Jim")
+
 //eval and print
 game.evalHands().printGame();
 

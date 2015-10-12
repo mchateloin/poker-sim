@@ -134,6 +134,16 @@ Game.prototype = {
             return false;
         }
     },
+    removeHand: function (name){
+        for(var i = 0; i < this.hands.length; i++){
+            if(this.hands[i].name === name){
+                this.hands.splice(i, 1);
+                return true;
+            }
+        }
+
+        return false;
+    },
     dealCard: function () {
         var self = this;
         if (self.cardsDealt < cfg.playerCards) {
